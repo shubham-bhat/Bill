@@ -1,0 +1,253 @@
+<html>
+  <head>
+    <title>Shopping Items</title>
+    <style type="text/css">
+      .cost{
+        display:none;
+      }
+      table{
+              border-collapse: collapse;
+            }
+      select{
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><u>Select Shopping Items</u></h1>
+  <div>
+    <form action = "">
+      <table border height="250px", width="500px">
+        <tr>
+          <th></th>
+          <th align="center"><h2>Item</th></h2>
+          <th align="center">Rate</th>
+          <th align="center">Quantity</th>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox" name="groceries" value="milk" onclick="check();"></td>
+          <td align="center">Milk</td>
+          <td align="center">15</td>
+          <td>
+            <select name="milk" onchange="calculate('milk')" disabled>
+              <option value="1"> 1 </option>
+              <option value="2"> 2 </option>
+              <option value="3"> 3 </option>
+              <option value="4"> 4 </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox" name="groceries" value="bread" onclick="check();"></td>
+          <td align="center">Bread</td>
+          <td align="center">15</td>
+          <td>
+            <select name="bread" onchange="calculate('bread')" disabled>
+              <option value="1"> 1 </option>
+              <option value="2"> 2 </option>
+              <option value="3"> 3 </option>
+              <option value="4"> 4 </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="groceries" value="eggs" onclick="check();"></td>
+          <td align="center">Eggs</td>
+          <td align="center">20</td>
+          <td>
+            <select name="eggs" onchange="calculate('eggs')" disabled>
+              <option value="1"> 1 </option>
+              <option value="2"> 2 </option>
+              <option value="3"> 3 </option>
+              <option value="4"> 4 </option>
+            </select>
+          </td>
+        </tr>
+         <tr>
+          <td><input type="checkbox" name="groceries" value="biscuit" onclick="check();"></td>
+          <td align="center">Biscuit</td>
+          <td align="center">10</td>
+          <td>
+            <select name="biscuit" onchange="calculate('biscuit')" disabled>
+              <option value="1"> 1 </option>
+              <option value="2"> 2 </option>
+              <option value="3"> 3 </option>
+              <option value="4"> 4 </option>
+            </select>
+          </td>
+        </tr>
+
+
+         <tr>
+          <td><input type="checkbox" name="groceries" value="softdrinks" onclick="check();"></td>
+          <td align="center">Softdrinks</td>
+          <td align="center">17.5</td>
+          <td>
+            <select name="softdrinks" onchange="calculate('biscuit')" disabled>
+              <option value="1"> 1 </option>
+              <option value="2"> 2 </option>
+              <option value="3"> 3 </option>
+              <option value="4"> 4 </option>
+            </select>
+          </td>
+        </tr>
+ <tr>
+          <td><input type="checkbox" name="groceries" value="icecream" onclick="check();"></td>
+          <td align="center">icecream</td>
+          <td align="center">5</td>
+          <td>
+            <select name="icecream" onchange="calculate('icecream')" disabled>
+              <option value="1"> 1 </option>
+              <option value="2"> 2 </option>
+              <option value="3"> 3 </option>
+              <option value="4"> 4 </option>
+            </select>
+          </td>
+        </tr>
+<tr>
+          <td><input type="checkbox" name="groceries" value="sandwich" onclick="check();"></td>
+          <td align="center">Sandwich</td>
+          <td align="center">30</td>
+          <td>
+            <select name="sandwich" onchange="calculate('sandwich')" disabled>
+              <option value="1"> 1 </option>
+              <option value="2"> 2 </option>
+              <option value="3"> 3 </option>
+              <option value="4"> 4 </option>
+            </select>
+          </td>
+        </tr>
+<tr>
+          <td><input type="checkbox" name="groceries" value="burger" onclick="check();"></td>
+          <td align="center">Burger</td>
+          <td align="center">25</td>
+          <td>
+            <select name="burger" onchange="calculate('burger')" disabled>
+              <option value="1"> 1 </option>
+              <option value="2"> 2 </option>
+              <option value="3"> 3 </option>
+              <option value="4"> 4 </option>
+            </select>
+          </td>
+        </tr>
+<tr>
+          <td><input type="checkbox" name="groceries" value="pizza" onclick="check();"></td>
+          <td align="center">Pizza</td>
+          <td align="center">40</td>
+          <td>
+            <select name="pizza" onchange="calculate('pizza')" disabled>
+              <option value="1"> 1 </option>
+              <option value="2"> 2 </option>
+              <option value="3"> 3 </option>
+              <option value="4"> 4 </option>
+            </select>
+          </td>
+        </tr>
+<tr>
+          <td><input type="checkbox" name="groceries" value="soup" onclick="check();"></td>
+          <td align="center">Soup</td>
+          <td align="center">10</td>
+          <td>
+            <select name="soup" onchange="calculate('soup')" disabled>
+              <option value="1"> 1 </option>
+              <option value="2"> 2 </option>
+              <option value="3"> 3 </option>
+              <option value="4"> 4 </option>
+            </select>
+          </td>
+        </tr>
+
+
+
+      </table>
+
+        <div class="cost" id="milk"></div>
+        <div class="cost" id="bread"></div>
+        <div class="cost" id="eggs"></div>
+        <div class="cost" id="biscuit"></div>
+        <div class="cost" id="softdrinks"></div>
+        <div class="cost" id="icecream"></div>
+        <div class="cost" id="sandwich"></div>
+        <div class="cost" id="burger"></div>
+        <div class="cost" id="pizza"></div>
+        <div class="cost" id="soup"></div>
+
+
+      <input type = "button" value ="Calculate" onclick="total();"/>
+      </div>
+      <div id="total" style="display:none;">
+
+      </div>
+
+    </form>
+  </div>
+
+    <script type="text/javascript">
+
+      const rate={
+        milk:15,
+        bread:15,
+        eggs:20,
+        biscuit:10,
+        softdrinks:17.5,
+        icecream:5,
+        sandwich:30,
+        burger:25,
+        pizza:40,
+        soup:10
+
+      }
+
+      function check() {
+        var list = document.getElementsByName("groceries");
+        for (var i=0; i<list.length; i++) {
+           if (list[i].checked) {
+             var s = document.querySelector(`select[name=${list[i].value}]`);
+            var q = s.options[s.selectedIndex].value;
+            document.getElementById('total').style.display="none";
+              document.querySelector(`select[name=${list[i].value}]`).disabled=false;
+              document.getElementById(list[i].value).innerHTML="<p>"+list[i].value + " : "+rate[list[i].value]*q+"</p>";
+              document.getElementById(list[i].value).style.display="block";
+
+           }
+           else{
+             document.getElementById('total').style.display="none";
+             document.querySelector(`select[name=${list[i].value}]`).disabled=true;
+             document.getElementById(list[i].value).style.display="none";
+           }
+         }
+         // total();
+       }
+
+        function calculate(item){
+          var s = document.querySelector(`select[name=${item}]`);
+          var q = s.options[s.selectedIndex].value;
+          document.getElementById(item).innerHTML="<p>"+item + " : "+rate[item]*q+"</p>";
+          document.getElementById('total').style.display="none";
+          // total();
+        }
+
+        function total() {
+          var checked = [];
+          var list = document.getElementsByName("groceries");
+          for (var i=0; i<list.length; i++) {
+             if (list[i].checked) {
+                checked.push(list[i].value);
+             }
+          }
+          console.log(checked);
+          var total=0;
+          checked.forEach(function(item) {
+            var s = document.querySelector(`select[name=${item}]`);
+            var q = s.options[s.selectedIndex].value;
+            total+=rate[item]*q;
+          })
+          document.getElementById('total').style.display="block";
+          document.getElementById('total').innerHTML="Total Amount: " + total;
+        }
+
+    </script>
+  </body>
+</html>
